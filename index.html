@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/autumn.png" type="image/x-icon">
+    <title>Strona główna</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="img/autumn.png" alt="autumn" class="logo">
+            <h1> Jesień</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Strona główna</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="gra.html">Gra interaktywna</a>
+        </div>
+    </nav>
+    <section>
+        <label>J e s i e ń</label>
+    </section>
+    <div class="main-container">
+        <div id="leaves-container"></div>
+        <main>
+            <div class="about">
+                <div class="about-content">
+                    <p> Jest jedną z czterech podstawowych pór roku w przyrodzie, w strefie klimatu umiarkowanego. Charakteryzuje się umiarkowanymi temperaturami powietrza z malejącą średnią dobową oraz (w przypadku Polski) stosunkowo dużym w skali roku opadem atmosferycznym. W świecie roślin i zwierząt jest to okres gromadzenia zapasów przed zimą.</p>
+                </div>
+                <div class="about-img-container">
+                    <img src="img/jesien.jpg" alt="jesień" class="about-img">
+                    <img src="img/obraz.jpg" alt="jesień" class="about-img">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Ciekawostki</h1>
+                <ul>
+                    <li>Jesień jest jedną z czterech podstawowych pór roku w przyrodzie strefy klimatu umiarkowanego.</li>
+                    <li>Rozróżnia się jesień klimatyczną i astronomiczną.</li>
+                    <li>Na półkuli południowej wszystkie te zjawiska i daty przesunięte są o pół roku.</li>
+                    <li>Wczesna jesień jest porą, w której dojrzewa wiele owoców.</li>
+                    <li>Jesienią właściwą drzewa zaczynają przechodzić w okres zimowego spoczynku, objawiający się żółknięciem liści.</li>
+                </ul>
+            </div>
+            <div class="contact-form" id="contact">
+                <h1>Formularz kontaktu</h1>
+                <div class="contact-align">
+                    <div class="labels">
+                        <label for="name">Imię:</label>
+                        <label for="email">Email:</label>
+                        <label for="msg">Wiadomość:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="name" id="name">
+                        <input type="email" name="email" id="email">
+                        <textarea name="msg" id="msg" cols="20" rows="2"></textarea>
+                    </div>
+                </div>
+                <button onclick="sendMsg()">Wyślij</button>
+                <p id="formMessage"></p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <h2>Stronę wykonali</h2>
+            <p>Mateusz Piela, Igor Tylman <br> Klasa 5TD, &copy;2024</p>
+        </div>
+        <div>
+            <h2>Kontakt z twórcami</h2>
+            <p>mateusz.piela@zsegw.pl, +48 123 456 789 <br>Gorzów Wlkp., <a href="index.html#contact">Kontakt</a></p>
+        </div>
+    </footer>
+    </body>
+    <script src="scripts/script.js"></script>
+</html>

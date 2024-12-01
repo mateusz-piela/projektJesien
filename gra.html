@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/gra.css">
+    <link rel="shortcut icon" href="img/autumn.png" type="image/x-icon">
+    <title>Gra</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="img/autumn.png" alt="autumn" class="logo">
+            <h1> Jesień</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Strona główna</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="gra.html">Gra interaktywna</a>
+        </div>
+    </nav>
+    <main>
+        <div id="game-container">
+            <div id="score-board">
+                <p>Wynik: <span id="score">0</span></p>
+                <p>Najlepszy wynik: <span id="best-score">0</span></p>
+                <p>Czas: <span id="timer">30</span> s</p>
+            </div>
+            <div id="game-area"></div>
+            <button id="start-button">Start</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h2>Stronę wykonali</h2>
+            <p>Mateusz Piela, Igor Tylman <br> Klasa 5TD, &copy;2024</p>
+        </div>
+        <div>
+            <h2>Kontakt z twórcami</h2>
+            <p>mateusz.piela@zsegw.pl, +48 123 456 789 <br>Gorzów Wlkp., <a href="index.html#contact">Kontakt</a></p>
+        </div>
+    </footer>
+    </body>
+    <script src="scripts/engine.js"></script>
+</html>
